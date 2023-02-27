@@ -24,7 +24,7 @@ Other required python libraries include: numpy, networkx, loguru etc.
 ├──	Data				# BREC Dataset file
 	└──	raw
 		├──	brec.npy	# unprocessed BREC Dataset in graph6 format
-		└──	brec_pair_visualize.npy	# unprocessed 400 pairs of graphs for visualization
+		└──	brec_visualize.npy	# unprocessed 800 graphs for visualization
 ├── BRECDataset.py		# BREC Dataset construction
 └── test.py				# Evaluation framework
 ```
@@ -75,7 +75,7 @@ The 400 pairs of graphs are from four categories: Basic, Regular, Extension, CFI
 
 Where Reliability represents the Reliability Check results in RAPC, means the distinguish results of essentially same graphs, only around 0 accuracy is accepted.
 
-The correctly distinguished pair id is stored in **result/results.npy**, you can refer to **brec_pair_visualize.npy** to check specific graph situation.
+The correctly distinguished pair id is stored in **result/results.npy**, you can refer to **brec_visualize.npy** to check specific graph situation.
 
 ### Reproduce Other Results
 
